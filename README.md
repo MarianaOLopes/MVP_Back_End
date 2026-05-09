@@ -85,25 +85,18 @@ Todas as rotas principais (GET, POST, PUT e DELETE) foram testadas e validadas u
 O projeto está estruturado de forma funcional para o desenvolvimento do MVP, separando responsabilidades entre modelos de dados, front-end, arquivos públicos, testes e documentação. Abaixo está a organização atual do repositório:
 
 MVP_BACK_END/
-│
-├── models/                         # Modelos e estruturas de dados do sistema
-│   ├── Atrações.js                # Modelagem das atrações turísticas
-│   ├── comentario.js              # Modelagem de comentários dos usuários
-│   └── usuario.js                 # Modelagem de usuários e autenticação
-│
-├── node_modules/                  # Dependências instaladas via npm
-│
-├── public/                        # Arquivos públicos e estáticos
-│
-├── requisitos/                    # Documentação de requisitos do projeto
-│
-├── Testes/                        # Testes e validações da aplicação
-│
-│
-├── package.json                   # Configurações e dependências do projeto
-├── package-lock.json              # Controle de versões das dependências
-├── README.md                      # Documentação principal do repositório
-└── server.js                      # Arquivo principal do servidor/back-end
+├── models/              # Modelos e estruturas de dados (MongoDB)
+│   ├── Atrações.js      # Modelagem das atrações turísticas
+│   ├── comentario.js    # Modelagem de comentários dos usuários
+│   └── usuario.js       # Modelagem de usuários e autenticação
+├── public/              # Arquivos públicos e estáticos (HTML, CSS, JS)
+├── requisitos/          # Documentação de requisitos do projeto
+├── Testes/              # Testes e validações da aplicação (Postman)
+├── .gitignore           # Arquivos ignorados pelo Git (node_modules, .env)
+├── package.json         # Configurações e dependências do projeto
+├── package-lock.json    # Controle de versões das dependências
+├── README.md            # Documentação principal do repositório
+└── server.js            # Arquivo principal do servidor/back-end
 
 
 🎯 Estrutura e Finalidade
