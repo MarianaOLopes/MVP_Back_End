@@ -45,7 +45,7 @@ Passo a passo
 1️⃣ Clone o repositório git clone 
  https://github.com/MarianaOLopes/MVP_Back_End
 2️⃣ Acesse a pasta do projeto
-cd mage-verde-online
+cd MVP_Back_End
 3️⃣ Instale as dependências
 npm install
 4️⃣ Configure o banco de dados
