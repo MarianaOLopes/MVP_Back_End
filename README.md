@@ -84,6 +84,14 @@ Todas as rotas principais (GET, POST, PUT e DELETE) foram testadas e validadas u
 
 O projeto está estruturado de forma funcional para o desenvolvimento do MVP, separando responsabilidades entre modelos de dados, front-end, arquivos públicos, testes e documentação. Abaixo está a organização atual do repositório:
 
+Entendo perfeitamente o que está acontecendo, Mariana! No seu editor (VS Code), o texto parece organizado porque ele não interpreta a linguagem Markdown enquanto você digita. Porém, quando você sobe para o GitHub, ele tenta ler tudo como um parágrafo comum, "esmagando" as linhas.
+
+Para que o GitHub entenda que deve manter essa estrutura de árvore exatamente como você montou, você precisa envolver esse bloco de texto com três crases (```) antes e depois.
+
+Como corrigir no seu arquivo:
+Vá no seu arquivo README.md e coloque as crases desta forma:
+
+```text
 MVP_BACK_END/
 ├── models/              # Modelos e estruturas de dados (MongoDB)
 │   ├── Atrações.js      # Modelagem das atrações turísticas
@@ -94,13 +102,10 @@ MVP_BACK_END/
 ├── Testes/              # Testes e validações da aplicação (Postman)
 ├── .gitignore           # Arquivos ignorados pelo Git (node_modules, .env)
 ├── package.json         # Configurações e dependências do projeto
-├── package-lock.json    # Controle de versões das dependências
 ├── README.md            # Documentação principal do repositório
 └── server.js            # Arquivo principal do servidor/back-end
-
-
-
-
+```
+```text
 🎯 Estrutura e Finalidade
 
 models/: Centraliza as entidades principais do sistema, garantindo organização da lógica de dados.
@@ -118,7 +123,7 @@ src/
  ├── routes/
  ├── controllers/
  ├── config/
-
+```
  🎯 Objetivo Principal
 
 Demonstrar, por meio de um MVP funcional, como a tecnologia pode contribuir para a valorização do turismo ecológico local, facilitando o acesso à informação e promovendo organização na gestão turística de Magé.
