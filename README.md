@@ -39,9 +39,11 @@ Pré-requisitos
 Node.js instalado
 MongoDB Local ou MongoDB Atlas configurado
 
+
+```text
 Passo a passo
-1️⃣ Clone o repositório
-git clone https://github.com/MarianaOLopes/MVP_Back_End
+1️⃣ Clone o repositório git clone 
+ https://github.com/MarianaOLopes/MVP_Back_End
 2️⃣ Acesse a pasta do projeto
 cd mage-verde-online
 3️⃣ Instale as dependências
@@ -54,7 +56,7 @@ MONGO_URI=mongodb://localhost:27017/mageVerdeDB
 5️⃣ Inicie o servidor
 npm start
 6️⃣ Acesse o sistema
-
+```
 Abra o navegador em:
 
 http://localhost:3000
@@ -82,14 +84,6 @@ Todas as rotas principais (GET, POST, PUT e DELETE) foram testadas e validadas u
 
 📁 Organização de Diretórios do Projeto
 
-O projeto está estruturado de forma funcional para o desenvolvimento do MVP, separando responsabilidades entre modelos de dados, front-end, arquivos públicos, testes e documentação. Abaixo está a organização atual do repositório:
-
-Entendo perfeitamente o que está acontecendo, Mariana! No seu editor (VS Code), o texto parece organizado porque ele não interpreta a linguagem Markdown enquanto você digita. Porém, quando você sobe para o GitHub, ele tenta ler tudo como um parágrafo comum, "esmagando" as linhas.
-
-Para que o GitHub entenda que deve manter essa estrutura de árvore exatamente como você montou, você precisa envolver esse bloco de texto com três crases (```) antes e depois.
-
-Como corrigir no seu arquivo:
-Vá no seu arquivo README.md e coloque as crases desta forma:
 
 ```text
 MVP_BACK_END/
