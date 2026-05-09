@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magé Verde - Cadastro</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <script defer src="js/login.js"></script>
+</head>
+<body>
+  <main class="main">
+    <a href="index.html" class="back">← Voltar</a>
+    <section class="loginBanner">
+      <h2 class="loginBannerTitle">Magé Verde Online</h2>
+      <p class="loginBannerText">Conectando você com o paisagismo e a natureza do nosso município.</p>
+    </section>
+    <section class="loginFormWrapper">
+      <h2 class="loginTitle">Crie sua conta</h2>
+      <form class="loginForm" id="formCadastro">
+        <label for="nome" class="formLabel">
+          Nome
+          <input id="nome" class="formInput" placeholder="Digite seu Nome" type="text" name="nomeInput" required />
+        </label>
+
+        <label for="email" class="formLabel">
+          Email
+          <input id="email" class="formInput" placeholder="Digite seu E-mail" type="email" name="emailInput" required />
+        </label>
+
+        <label for="password" class="formLabel">
+          Senha
+          <input 
+            id="password" 
+            class="formInput" 
+            placeholder="Digite sua senha" 
+            type="password" 
+            name="passwordInput" 
+            required
+            minlength="6" 
+            maxlength="12"
+            title="A senha deve ter entre 6 e 12 caracteres e conter pelo menos uma letra e um número"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,12}$" 
+          />
+        </label>
+        <select id="tipo">
+          <option value="visitante">Visitante</option>
+          <option value="admin">Administrador</option>
+        </select>
+        <button class="formBtn" type="submit">Cadastrar e Entrar</button>
+        <a href="login.html"><butto class="formbtn" type="submit">Já possui cadastro acesse aqui!</button></a>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

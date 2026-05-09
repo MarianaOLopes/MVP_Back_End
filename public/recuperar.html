@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magé Verde - Redefinir Senha</title>
+  <link rel="stylesheet" href="css/cadastro.css">
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <script defer src="js/recuperar.js"></script>
+</head>
+<body>
+  <main class="main">
+    <a href="index.html" class="back">← Voltar</a>
+    <section class="loginBanner">
+      <h2 class="loginBannerTitle">Magé Verde Online</h2>
+      <p class="loginBannerText">Conectando você com o paisagismo e a natureza do nosso município.</p>
+    </section>
+    <section class="loginFormWrapper">
+      <h2 class="loginTitle">Redefinir Senha</h2>
+      <form class="loginForm" id="formRecuperar">
+        
+        <form class="loginForm" id="formRecuperar">
+    <label for="email" class="formLabel">
+      Confirmar Email
+      <input id="email" class="formInput" placeholder="Digite seu E-mail" type="email" required />
+    </label>
+
+    <label for="password" class="formLabel">
+      Nova Senha
+      <input 
+        id="password" 
+        class="formInput" 
+        placeholder="Digite a nova senha" 
+        type="password" 
+        required
+        minlength="6" 
+        maxlength="12"
+        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,12}$" 
+      />
+    </label>
+
+    <label for="confirmPassword" class="formLabel">
+      Repita a Nova Senha
+      <input 
+        id="confirmPassword" 
+        class="formInput" 
+        placeholder="Repita a nova senha" 
+        type="password" 
+        required
+      />
+    </label>
+
+    <button class="formBtn" type="submit">Redefinir Senha</button>
+        </form>
+        <select id="tipo">
+          <option value="visitante">Visitante</option>
+          <option value="admin">Administrador</option>
+        </select>
+        <div style="margin-top: 1.5rem; text-align: center;">
+        <a href="login.html" style="text-decoration: none; color: rgb(10, 70, 45); font-weight: bold;">
+        <button class="formbtn" type="submit">Voltar ao Login</button></a>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

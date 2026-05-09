@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <script src="js/admin.js"></script>
+  <title>Magé Verde - Admin</title>
+</head>
+
+<body>
+      
+  <header class="header">
+    <h1 class="headerTitle">Painel Administrativo</h1>
+    <a href="index.html" class="logoutBtn">Sair</a>
+  </header>
+
+  <main class="main">
+    <h2 class="subtitle">Gestão de Disponibilidade</h2>
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="th">Atração</th>
+          <th class="th">Dias</th>
+          <th class="th">Horário</th>
+          <th class="th">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="corpoTabela">
+        </tbody>
+    </table>
+
+    <section class="form-section">
+      <h3>Publicar Atração</h3>
+      <form class="form" id="formAdmin">
+        <label class="label" for="title">
+          Titulo
+          <input id="title" type="text" placeholder="Titulo da atração" class="input">
+        </label>
+
+        <label for="category" class="label">
+          Categoria
+          <select id="category" class="input">
+            <option>Parque</option>
+            <option>Cachoeira</option>
+            <option>Trilha</option>
+            <option>Evento</option>
+          </select>
+        </label>
+
+        <label for="image" class="label">
+          Imagem da atração
+          <input id="image" type="file" accept="image/*" class="input">
+        </label>
+
+        <label for="description" class="label">
+          Descrição
+          <textarea id="description" placeholder="Descrição da atração..." class="textarea"></textarea>
+        </label>
+
+        <span>Dias Disponíveis:</span>
+          <div class="checkbox-group">
+            <label><input type="checkbox" name="dias" value="Segunda-feira" checked> Seg</label>
+            <label><input type="checkbox" name="dias" value="Terça-feira" checked> Ter</label>
+            <label><input type="checkbox" name="dias" value="Quarta-feira" checked> Qua</label>
+            <label><input type="checkbox" name="dias" value="Quinta-feira" checked> Qui</label>
+            <label><input type="checkbox" name="dias" value="Sexta-feira" checked> Sex</label>
+            <label><input type="checkbox" name="dias" value="Sábado" checked> Sab</label>
+            <label><input type="checkbox" name="dias" value="Domingo" checked> Dom</label>
+          </div>
+
+        <label for="openTime" class="label">
+          Horário de Abertura:
+          <input id="openTime" type="time" value="08:00" />
+        </label>
+
+        <label for="closeTime" class="label">
+          Horário de Fechamento:
+          <input id="closeTime" type="time" value="17:00" />
+        </label>
+
+        <button type="submit" class="save-btn">Salvar</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
