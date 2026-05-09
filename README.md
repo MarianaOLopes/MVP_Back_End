@@ -106,6 +106,8 @@ MVP_BACK_END/
 └── server.js                      # Arquivo principal do servidor/back-end
 
 
+
+
 🎯 Estrutura e Finalidade
 
 models/: Centraliza as entidades principais do sistema, garantindo organização da lógica de dados.
