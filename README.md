@@ -3,6 +3,7 @@
 
 👥 Integrante da Equipe
 
+Douglas Bernard Martins Teixeira da Silva
 Mariana Oliveira Lopes 
 
 Função: Desenvolvedora Full-Stack, responsável pelo desenvolvimento Back-End com Node.js, Front-End da aplicação e modelagem/integração com o banco de dados MongoDB.
