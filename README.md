@@ -35,17 +35,19 @@ O Magé Verde Online é uma aplicação web voltada para a gestão e disponibili
    ```bash
    git clone [https://github.com/MarianaOLopes/MVP_Back_End](https://github.com/MarianaOLopes/MVP_Back_End)
 
-2. **Acesse a pasta do projeto:**
-   cd MVP_Back_End
+2. **Acesse a pasta do projeto:**  
 
-3. **Instale as dependências:**
-    npm install
+    cd MVP_Back_End
+
+3. **Instale as dependências:**  
+
+        npm install
 
 4. **Configure o banco de dados:**  
     O projeto já está configurado para conectar-se ao banco de dados de produção na nuvem (MongoDB Atlas) através da string inserida no arquivo server.js.
 
 5. **Inicie o servidor:**    
-    npm start
+        npm start
 
 6. **Acesse o sistema:**
     Abra o seu navegador e acesse: http://localhost:3000
@@ -65,7 +67,8 @@ O Magé Verde Online é uma aplicação web voltada para a gestão e disponibili
 
     Senha: teste1234567
 
-    ℹ️ Informações Adicionais Relevantes
+    ℹ️ Informações Adicionais Relevantes  
+
     ✅ Testes de API
     Todas as rotas principais (GET, POST, PUT e DELETE) foram exaustivamente testadas e validadas utilizando o Postman, garantindo o funcionamento adequado, integridade de dados e tratamento de erros com os retornos HTTP apropriados (200, 201, 500).
     ```text
@@ -82,7 +85,7 @@ O Magé Verde Online é uma aplicação web voltada para a gestão e disponibili
     ├── package.json         # Configurações e dependências do projeto
     ├── README.md            # Documentação principal do repositório
     └── server.js            # Arquivo principal do servidor/back-end
-    ```text
+    
 
     🎯 Estrutura e Finalidade
     models/: Centraliza as entidades principais do sistema, garantindo organização da lógica de dados.
@@ -97,13 +100,13 @@ O Magé Verde Online é uma aplicação web voltada para a gestão e disponibili
 
     📌 Observação de Evolução Futura
     Para maior padronização profissional de mercado, o projeto possui escalabilidade para evoluir rumo a uma estrutura mais modularizada utilizando o padrão MVC:
-    ```text
+    
     src/
     ├── models/
     ├── routes/
     ├── controllers/
-    └── config/
-    ```text
+    └── config/  
+       
 
     🎯 Objetivo Principal
     Demonstrar, por meio de um MVP funcional, como a tecnologia pode contribuir para a valorização do turismo ecológico local, facilitando o acesso à informação e promovendo organização na gestão turística do município de Magé.
