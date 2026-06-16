@@ -36,16 +36,16 @@ O Magé Verde Online é uma aplicação web voltada para a gestão e disponibili
    git clone [https://github.com/MarianaOLopes/MVP_Back_End](https://github.com/MarianaOLopes/MVP_Back_End)
 
 2. **Acesse a pasta do projeto:**
-    ```cd MVP_Back_End
+   cd MVP_Back_End
 
 3. **Instale as dependências:**
-  ```npm install
+    npm install
 
 4. **Configure o banco de dados:**  
     O projeto já está configurado para conectar-se ao banco de dados de produção na nuvem (MongoDB Atlas) através da string inserida no arquivo server.js.
 
 5. **Inicie o servidor:**    
-    ```npm start
+    npm start
 
 6. **Acesse o sistema:**
     Abra o seu navegador e acesse: http://localhost:3000
