@@ -15,10 +15,12 @@ app.use(cors());
 app.use(express.json()); 
 app.use(express.static('public'));
 
-// 1. Conexão com o Banco Local
-mongoose.connect('mongodb://localhost:27017/mageVerdeDB')
-    .then(() => console.log("✅ Conectado ao Banco de Magé!"))
-    .catch(err => console.error("❌ Erro ao conectar:", err));
+// Ligação ao Banco de Dados na Nuvem (MongoDB Atlas) - Atendendo ao RNF04 e RNF05
+const urlBancoNuvem = "mongodb+srv://marianalopesolivei_db_user:NUVMuOl1H9etNhsW@mageverdecluster.u91izgh.mongodb.net/mageVerdeDB?appName=MageVerdeCluster";
+
+mongoose.connect(urlBancoNuvem)
+  .then(() => console.log('✅ Banco de dados do Circuito Magé Verde conectado à Nuvem!'))
+  .catch(err => console.error('❌ Erro de conexão com o banco na nuvem:', err));
 
 // --- ROTAS DE ATRAÇÕES ---
 
