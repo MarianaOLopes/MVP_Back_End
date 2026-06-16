@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Ligação ao Banco de Dados na Nuvem (MongoDB Atlas) - Atendendo ao RNF04 e RNF05
-const urlBancoNuvem = "mongodb+srv://marianalopesolivei_db_user:NUVMuOl1H9etNhsW@mageverdecluster.u91izgh.mongodb.net/mageVerdeDB?appName=MageVerdeCluster";
+const urlBancoNuvem = "mongodb+srv://admin:MageVerde123@mageverdecluster.u91izgh.mongodb.net/mageVerdeDB?appName=MageVerdeCluster";
 
 mongoose.connect(urlBancoNuvem)
   .then(() => console.log('✅ Banco de dados do Circuito Magé Verde conectado à Nuvem!'))
